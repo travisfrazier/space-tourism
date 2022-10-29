@@ -1,0 +1,132 @@
+// Colors
+$color-night: #0b0d17;
+$color-main: #d0d6f9;
+$color-light: #ffffff;
+
+//Fonts
+$font-one: 'Bellefair', serif;
+$font-two: 'Barlow Condensed', sans-serif;
+$font-three: 'Barlow', sans-serif;
+
+//Typography 
+@mixin heading-one {
+    font-size: 150px;
+    font-family: $font-one;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 112.5px;
+      }
+}
+
+@mixin heading-two {
+    font-size: 100px;
+    font-family: $font-one;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 75px;
+      }
+}
+
+@mixin heading-three {
+    font-size: 56px;
+    font-family: $font-one;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 42px;
+      }
+}
+
+@mixin heading-four {
+    font-size: 32px;
+    font-family: $font-one;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+}
+
+@mixin heading-five {
+    font-family: $font-two;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: $color-main;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 22px;
+      }
+}
+
+@mixin sub-heading-one {
+    font-family: $font-one;
+    font-weight: normal;
+    font-size: 28px;
+    color: $color-light;
+    text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+        font-size: 22px;
+      }
+}
+
+@mixin sub-heading-two {
+    font-family: $font-two;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    color: $color-light;
+    text-transform: uppercase;
+}
+
+@mixin nav-text {
+    font-family: $font-two;
+    color: $color-light;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+@mixin body-text {
+    font-family: $font-three;
+    font-size: 18px;
+    font-weight: 400;
+    @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    @include heading-one();
+}
+
+h2 {
+    @include heading-two();
+}
+
+h3 {
+    @include heading-three();
+}
+
+h4 {
+    @include heading-four();
+}
+
+h5 {
+    @include heading-five();
+}
+
+p {
+    @include body-text();
+}
