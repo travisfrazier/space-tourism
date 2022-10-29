@@ -114,6 +114,7 @@ export default {
   @include nav-text();
   @media only screen and (max-width: 768px) {
 		width: 150px;
+    margin-bottom: 5px;
 	}
   strong {
     margin-right: 10px;
@@ -155,7 +156,7 @@ export default {
 .mobile-menu-container {
   z-index: 1000;
   display: none !important;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   display: flex;
