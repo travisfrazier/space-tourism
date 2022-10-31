@@ -13,7 +13,7 @@
 			</section>
 			<section class="section-two">
 				<div>
-					<g-link to="/destination/"><button class="home-btn">Explore</button></g-link>
+					<g-link to="https://space-tourism-vuejs.netlify.app/destination/"><button class="home-btn">Explore</button></g-link>
 				</div>
 			</section>
 		</main>
