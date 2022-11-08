@@ -5,7 +5,7 @@
       <img
         class="dest-img"
         :class="{ fadeIn: animate }"
-        :src="require('../assets/images/' + this.items[this.i].img)"
+        :src="require('../assets/destination/' + this.items[this.i].images.webp)"
         width="500"
       />
     </section>
@@ -49,18 +49,18 @@
         >
       </nav>
       <div :class="{ fadeIn: animate }">
-        <h2>{{ this.items[this.i].title }}</h2>
+        <h2>{{ this.items[this.i].name }}</h2>
         <p class="dest-info">
-          {{ this.items[this.i].info }}
+          {{ this.items[this.i].description }}
         </p>
         <div class="dest-specs">
           <div>
             <p>AVG. DISTANCE</p>
-            <h5>{{ this.items[this.i].specs.dist }}</h5>
+            <h5>{{ this.items[this.i].distance }}</h5>
           </div>
           <div>
             <p>EST. TRAVEL TIME</p>
-            <h5>{{ this.items[this.i].specs.time }}</h5>
+            <h5>{{ this.items[this.i].travel }}</h5>
           </div>
         </div>
       </div>
@@ -69,53 +69,14 @@
 </template>
 
 <script>
+import data from '../assets/data.json';
+
 export default {
   data() {
     return {
       i: 0,
       animate: false,
-      items: [
-        {
-          title: "Moon",
-          img: "moon.svg",
-          info: "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
-          specs: {
-            dist: "384,400 KM",
-            time: "3 DAYS",
-          },
-          isActive: true,
-        },
-        {
-          title: "Mars",
-          img: "mars.svg",
-          info: "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-          specs: {
-            dist: "225 MIL. KM",
-            time: "9 MONTHS",
-          },
-          isActive: false,
-        },
-        {
-          title: "Europa",
-          img: "europa.svg",
-          info: "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
-          specs: {
-            dist: "628 MIL. KM",
-            time: "3 YEARS",
-          },
-          isActive: false,
-        },
-        {
-          title: "Titan",
-          img: "titan.svg",
-          info: "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
-          specs: {
-            dist: "1.6 BIL. KM",
-            time: "7 YEARS",
-          },
-          isActive: false,
-        },
-      ],
+      items: data.destinations
     };
   },
   methods: {
@@ -145,13 +106,6 @@ main {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
-.destination {
-  background: url("../assets/images/destination.png");
-  background-size: cover;
-  //height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .dest-img {
   padding-top: 60px;

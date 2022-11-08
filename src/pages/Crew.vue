@@ -17,7 +17,7 @@ import CrewItem from '../components/CrewItem.vue';
 
 <style lang="scss" scoped>
 .crew {
-	background: url('../assets/images/crew.png');
+	background: url('../assets/crew/background-crew-desktop.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-	background: url('../assets/images/Bitmap.png');
+	background: url('../assets/home/background-home-desktop.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

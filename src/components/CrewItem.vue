@@ -2,10 +2,10 @@
   <main>
     <section class="section-two">
       <div :class="{ fadeIn: animate }">
-        <h4>{{ this.items[this.i].title }}</h4>
+        <h4>{{ this.items[this.i].role }}</h4>
         <h3>{{ this.items[this.i].name }}</h3>
         <p class="dest-info">
-          {{ this.items[this.i].info }}
+          {{ this.items[this.i].bio }}
         </p>
         <nav>
         <span
@@ -50,7 +50,7 @@
     <section class="section-one">
       <img
         class="dest-img" :class="{ fadeIn: animate }"
-        :src="require('../assets/images/' + this.items[this.i].img)"
+        :src="require('../assets/crew/' + this.items[this.i].images.webp)"
         width="500"
       />
     </section>
@@ -58,41 +58,14 @@
 </template>
 
 <script>
+import data from '../assets/data.json';
+
 export default {
   data() {
     return {
       i: 0,
       animate: false,
-      items: [
-        {
-          title: 'Commander',
-          name: "Douglas Hurley",
-          img: "douglas.svg",
-          info: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
-          isActive: true,
-        },
-        {
-          title: 'Mission Specialist',
-          name: "MARK SHUTTLEWORTH",
-          img: "mark.svg",
-          info: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
-          isActive: false,
-        },
-        {
-          title: 'Pilot',
-          name: "Victor Glover",
-          img: "victor.svg",
-          info: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
-          isActive: false,
-        },
-        {
-          title: 'Flight Engineer',
-          name: "Anousheh Ansari",
-          img: "anousheh.svg",
-          info: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
-          isActive: false,
-        },
-      ],
+      items: data.crew
     };
   },
   methods: {
@@ -122,13 +95,6 @@ main {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
-.destination {
-  background: url("../assets/images/destination.png");
-  background-size: cover;
-  //height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .dest-img {
   padding-top: 60px;

@@ -6,7 +6,7 @@
           <h5>The terminology...</h5>
           <h3>{{ this.items[this.i].name }}</h3>
           <p class="dest-info">
-            {{ this.items[this.i].info }}
+            {{ this.items[this.i].description }}
           </p>
         </div>
         <nav>
@@ -44,7 +44,7 @@
       <img
         class="dest-img"
         :class="{ fadeIn: animate }"
-        :src="require('../assets/images/' + this.items[this.i].img)"
+        :src="require('../assets/technology/' + this.items[this.i].images.portrait)"
         width="500"
       />
     </section>
@@ -52,34 +52,14 @@
 </template>
 
 <script>
+import data from '../assets/data.json';
+
 export default {
   data() {
     return {
       i: 0,
       animate: false,
-      items: [
-        {
-          title: "Commander",
-          name: "LAUNCH VEHICLE",
-          img: "vehicle.jpg",
-          info: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-          isActive: true,
-        },
-        {
-          title: "Mission Specialist",
-          name: "SAPCEPORT",
-          img: "port.jpg",
-          info: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
-          isActive: false,
-        },
-        {
-          title: "Pilot",
-          name: "SPACE CAPSULE",
-          img: "capsule.jpg",
-          info: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
-          isActive: false,
-        },
-      ],
+      items: data.technology
     };
   },
   methods: {
@@ -109,13 +89,6 @@ main {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
-.destination {
-  background: url("../assets/images/destination.png");
-  background-size: cover;
-  //height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .dest-img {
   padding-top: 60px;
