@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <strong>
-      <g-image src="~/assets/images/nav-star.svg" width="500" />
+      <g-image src="~/assets/shared/logo.svg" width="500" />
     </strong>
     <div class="mobile-menu-container">
       <div

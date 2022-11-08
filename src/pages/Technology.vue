@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .technology {
-	background: url('../assets/images/technology.png');
+	background: url('../assets/technology/background-technology-desktop.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .destination {
-	background: url('../assets/images/destination.png');
+	background: url('../assets/destination/background-destination-desktop.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
