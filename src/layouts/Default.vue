@@ -43,6 +43,7 @@ body {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 40px;
+	min-height: 100vh;
 }
 
 .container {
