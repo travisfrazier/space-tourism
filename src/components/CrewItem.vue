@@ -88,7 +88,7 @@ export default {
 <style lang="scss" scoped>
 main {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.75fr 1fr;
   padding-bottom: 100px;
   gap: 50px;
   @media only screen and (max-width: 768px) {
@@ -96,12 +96,20 @@ main {
     gap: 30px;
   }
 }
+.section-one {
+  display: flex;
+  justify-content: end;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
 .dest-img {
   padding-top: 60px;
-  padding-left: 30px;
-  width: 100%;
+  max-height: 450px;
+  width: auto;
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    width: 80%;
+    max-height: 100%;
     padding-left: 0px;
   }
 }
