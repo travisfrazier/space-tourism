@@ -85,7 +85,7 @@ main {
   grid-template-columns: 1.5fr 1fr;
   padding-bottom: 100px;
   gap: 50px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -93,6 +93,9 @@ main {
 .dest-img {
   padding-top: 60px;
   width: 100%;
+  @media only screen and (max-width: 1000px) {
+    max-width: 500px;
+  }
 }
 nav {
   cursor: pointer;
@@ -117,7 +120,7 @@ button {
     transition: background-color 0.7s ease-in-out;
     color: $color-night;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     width: 60px;
     height: 60px;
   }
@@ -132,7 +135,7 @@ button {
 .dest-info {
   padding-bottom: 60px;
   margin-bottom: 20px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     padding-bottom: 0px;
   }
 }

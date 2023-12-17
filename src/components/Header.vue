@@ -83,7 +83,7 @@ export default {
   height: 80px;
   padding-left: 40px;
   img {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
       position: absolute;
       top: 15px;
       left: 10px;
@@ -100,7 +100,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     display: none;
   }
 }
@@ -112,7 +112,7 @@ export default {
   display: flex;
   align-items: center;
   @include nav-text();
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
 		width: 150px;
     margin-bottom: 5px;
 	}
@@ -121,7 +121,7 @@ export default {
   }
   &:first-of-type {
     margin-left: 0px;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		margin-left: 48px;
 	}
   }
@@ -162,14 +162,14 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     display: flex !important;
   }
 }
 .mobile-menu {
   z-index: 998;
   display: none;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     display: inline-block;
     cursor: pointer;
   }

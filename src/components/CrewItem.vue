@@ -91,7 +91,7 @@ main {
   grid-template-columns: 1.75fr 1fr;
   padding-bottom: 100px;
   gap: 50px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -99,7 +99,7 @@ main {
 .section-one {
   display: flex;
   justify-content: end;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     justify-content: center;
   }
 }
@@ -107,10 +107,11 @@ main {
   padding-top: 60px;
   max-height: 450px;
   width: auto;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     width: 80%;
     max-height: 100%;
     padding-left: 0px;
+    max-width: 500px;
   }
 }
 nav {
@@ -124,7 +125,7 @@ span {
   &:hover {
     border-bottom: 2px solid $color-main;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     &:last-of-type {
       margin-right: 0px;
     }

@@ -36,7 +36,7 @@ export default {
 	background-position: center;
 	height: 100vh;
 	padding-bottom: 130px;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
     	height: 100%;
   }
 }
@@ -58,7 +58,7 @@ main {
 	grid-template-columns: 1fr 1fr;
 	padding-right: 55px;
 	padding-top: 120px;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
 	padding-top: 60px;
 	padding-right: 0px;
@@ -67,7 +67,7 @@ main {
 .section-two {
 	justify-self: end;
 	align-self: end;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
       justify-self: center;
 	  margin-top: 50px;
   }

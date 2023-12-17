@@ -102,7 +102,7 @@ main {
   grid-template-columns: 1fr 1fr;
   padding-bottom: 100px;
   gap: 50px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -110,9 +110,10 @@ main {
 .dest-img {
   padding-top: 60px;
   padding-left: 30px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     width: 100%;
     padding-left: 0px;
+    max-width: 500px;
   }
 }
 h5 {
@@ -138,7 +139,7 @@ span {
 }
 .section-two {
   padding-top: 80px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     padding-top: 20px;
   }
 }

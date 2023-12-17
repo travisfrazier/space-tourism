@@ -15,7 +15,7 @@ $font-three: 'Barlow', sans-serif;
 	font-weight: 400;
 	color: $color-light;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 112.5px;
 	}
 }
@@ -26,7 +26,7 @@ $font-three: 'Barlow', sans-serif;
 	font-weight: 400;
 	color: $color-light;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 75px;
 	}
 }
@@ -37,7 +37,7 @@ $font-three: 'Barlow', sans-serif;
 	font-weight: 400;
 	color: $color-light;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 42px;
 	}
 }
@@ -48,7 +48,7 @@ $font-three: 'Barlow', sans-serif;
 	font-weight: 400;
 	color: $color-light;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 24px;
 	}
 }
@@ -61,7 +61,7 @@ $font-three: 'Barlow', sans-serif;
 	color: $color-main;
 	text-transform: uppercase;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 22px;
 	}
 }
@@ -72,7 +72,7 @@ $font-three: 'Barlow', sans-serif;
 	font-size: 28px;
 	color: $color-light;
 	text-transform: uppercase;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 22px;
 	}
 }
@@ -98,7 +98,7 @@ $font-three: 'Barlow', sans-serif;
 	font-family: $font-three;
 	font-size: 18px;
 	font-weight: 400;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1000px) {
 		font-size: 16px;
 	}
 }
